@@ -49,19 +49,19 @@ ctx.fill(); // Draw the specified path
 ctx.lineWidth = 5;
 ctx.strokeStyle = "#0000FF";
 ctx.beginPath();
-ctx.arc(100, 500, 50, 0, 2 * Math.PI); // Cirlcle with center (100, 500) and radius 50
+ctx.arc(100, 500, 50, 0, 2 * Math.PI); // Circle (0 to 2*PI) with center (100, 500) and radius 50
 ctx.stroke();
 
 ctx.fillStyle = "green";
 ctx.beginPath();
-ctx.arc(250, 500, 30, 0, 2 * Math.PI);
+ctx.arc(250, 500, 30, 0, 2 * Math.PI); // Circle (0 to 2*PI) with center (250, 500) and radius 30
 ctx.fill();
 
 ctx.fillStyle = "#FFFF00";
 ctx.beginPath();
-ctx.arc(250, 500, 20, 0, 2 * Math.PI);
+ctx.arc(250, 500, 20, 0, Math.PI); // Half Circle (0 to PI) with center (250, 500) and radius 20
 ctx.fill();
 
 // DRAW IMAGES
-ctx.drawImage(htmlLogoImg, 200, 200)
-ctx.drawImage(htmlLogoImg, 200, 350, 50, 50)
+ctx.drawImage(htmlLogoImg, 200, 200) // Draw Image with top left corner of (200, 200)
+ctx.drawImage(htmlLogoImg, 200, 350, 50, 50) // Draw Image with top left corner of (200, 350) scale to 50x50 size
